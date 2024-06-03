@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+
+    <div class="container p-5 ">
+
+
+
+        <h1 class="text-center ">Calculator</h1>
+        
+        <div class="" >
+            <div class="row justify-content-center  " >
+                <input type="text"name="display" class="border-dark form-control-lg col col-lg-4   text-end " placeholder="0" id="Display" disabled>
+            </div>
+        
+            <div class="row mt-2 justify-content-center  ">
+                <button type="button" class="btn btn-dark col col-lg-1" onclick="AllClear()"  >AC</button>
+                <button type="button" class="btn btn-dark col  col-lg-1 " onclick="Dot()" >.</button>
+                <button type="button" class="btn btn-dark col col-lg-1 " onclick="Clear()" ><i class="bi bi-backspace"></i></button>
+                <button type="button" class="btn btn-success col col-lg-1"onclick="Operators('/')" >/</button>
+
+            </div>
+            <div class="row justify-content-center ">
+    
+                <button type="button" class="btn btn-dark col col-lg-1  " onclick="Digits(7)"   >7</button>
+                <button type="button" class="btn btn-dark col col-lg-1  " onclick="Digits(8)"  >8</button>
+                <button type="button" class="btn btn-dark col col-lg-1   " onclick="Digits(9)"  >9</button>
+                <button type="button" class="btn btn-success col col-lg-1 " onclick="Operators('+')"  >+</button>
+
+            </div>
+            <div class="row  justify-content-center">
+                <button type="button" class="btn btn-dark col col-lg-1   "onclick="Digits(4)"    >4</button>
+                <button type="button" class="btn btn-dark col col-lg-1  "onclick="Digits(5)"    >5</button>
+                <button type="button" class="btn btn-dark col col-lg-1  "onclick="Digits(6)"    >6</button>
+                <button type="button" class="btn btn-success  col col-lg-1  " onclick="Operators('-')"   >-</button>
+            </div>
+            <div class="row justify-content-center ">
+                <button type="button" class="btn btn-dark col col-lg-1  " onclick="Digits(1)"  >1</button>
+                <button type="button" class="btn btn-dark col col-lg-1  " onclick="Digits(2)"   >2</button>
+                <button type="button" class="btn btn-dark col  col-lg-1  " onclick="Digits(3)"   >3</button>
+                <button type="button" class="btn btn-success  col col-lg-1  "  onclick="Operators('*')"  >*</button>
+
+            </div>
+            <div class="row justify-content-center ">
+                <button type="button" class="btn btn-dark col col-lg-1  " >00</button>
+                <button type="button" class="btn btn-dark col col-lg-1 " onclick="Zero()"  >0</button>
+                <button type="button" class="btn btn-danger col col-lg-2  "onclick="Result()" >=</button>
+
+            </div>
+        
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
